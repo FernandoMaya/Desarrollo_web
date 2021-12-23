@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<div class="login">
+		<div class="imagen">
+			<img src="logo.png">
+		</div>
+		<div class="inicio">
+			<!-- <h2>Nombre:</h2>
+			<input type="text" id="nom" placeholder="Nombre">-->
+			<!-- <h2>Correo</h2> -->
+			<input type="text" id="cor" placeholder="Email o Usuario"><br><br>
+
+			<!-- <h2>Contraseña</h2> -->
+			<input type="password" id="psw" placeholder="Password"><br><br>
+
+			<button onclick="obtener()">Iniciar Sesión</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function obtener(){
+		// alert(document.querySelector("#nom").value);
+		correo = document.getElementById("cor").value;
+		psw = document.getElementById("psw").value;
+		if (correo === '') {
+			alert("El campo esta vacio");
+
+		}
+		if(psw === ''){
+			alert("El campo esta vacio")
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+</head>
+<body>
+	<h1>JavaScript Orientado a Objetos</h1>
+	<p>En Js hay distintos tipos de datos, algunos de ellos (los primitivos) que solo pueden almacenar un valor, o los arreglos que en realidad son colecciones de datos. Así como los arreglos en JS hay otra estructura que nos facilita la creación de colecciones de datos: <b>los objetos</b></p>
+
+	<p>Los objetos en JS tienen la caracteristica de que podemos formar entidaeds complejas con valores almacenados en una estructura <b>llave:valor</b></p>
+
+	<p>Ademas los objetos se encuentran casi en todos los aspectos del lenguaje,incluidos <b>DOM y BOM</b></p>
+
+	<p>Para crear un objeto se puede realizar de dos formas distintas, la forma literal y con un constructor</p>
+
+	<script type="text/javascript">
+		var usuario = new Object(); //Constructor
+		var usuario = {} //Literal
+	</script>
+	<div class="codigo">
+		<h5><i>let</i> usuario <b>= new</b> <i>Object</i>(); <span>//Constructor</span></h5>
+		<h5><i>let</i> usuario <b>=</b>{}; <span>//Literal</span></h5>
+	</div>
+
+	<p>dentro de la estructura de las llaves se colocará una lista opcional de propiedades, estas son almacenadas en una estructura llave-valor donde la cadena de la llave (que también es denominada propiedad) y el valor pueden ser cualquier cosa</p>
+	<p>En esta estructura el nombre de la propiedad o la llave se coloca antes de un par de puntos <b>:</b> y posteriormente se colocará el valor de la propiedad.</p>
+	<p>Una vez que se crea el objeto con sus atributos, podemos acceder a sus datos mediante la notación de punto (cualquier otro lenguaje) colocando <b>objeto:atributo</b> Es importante conocer que cuando colocamos un atributo que tenga mas de una palabra separada por espacios lo tendremos que colocar entre comillas dobles indicandole que es solo uno, es por esto que ademas de la notación de punto, ademas de la notación de punto, podemos acceder a los atributos con notación de corchetes.</p>
+
+	<script type="text/javascript">
+		let usuario = {
+			nombre:"Fernando",
+			apellido:"Maya",
+			"apellido materno":"Carranza",
+		}
+	</script>
+	<div class="codigo">
+		<h5><i>let</i> usuario <b>=</b>{</h5>
+		<h5>nombre: <u>"Fernando"</u>,</h5>
+		<h5>apellido: <u>"Maya"</u>,</h5>
+		<h5><u>"Apellido Materno"</u>:<u>"Carranza"</u></h5>
+	</div>
+</body>
+<script type="text/javascript">
+	// let usuario = new Object(); //Constructor
+	let usuario = {}; //Literal
+	usuario = {
+		nombre:"Fernando",
+		apellido:"Maya"
+		"apellido materno": "Carranza"
+	}
+	console.log("Mi nombre es: " + usuario.nombre);
+	console.log()
+</script>
+</html>
